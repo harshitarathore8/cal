@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cal.css">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/4435a4b9d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="cal"> 
+   <div>
+       <input type="text" id="screen"/>
+   </div>
+   <div>   
+   <table id="table">
+     <tr>
+        <td><input id="btn7" type="button" value="7" /></td>
+        <td><input type="button" value="8" id="btn8"/> </td>
+        <td><input type="button" value="9" id="btn9"/> </td>
+        <td><input type="button" value="+" id="btn+"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="4" id="btn4"/> </td>
+        <td><input type="button" value="5" id="btn5"/> </td>
+        <td><input type="button" value="6" id="btn6"/> </td>
+        <td><input type="button" value="-" id="btn-"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="1" id="btn1"/> </td>
+        <td><input type="button" value="2" id="btn2"/> </td>
+        <td><input type="button" value="3" id="btn3"/> </td>
+        <td><input type="button" value="*" id="btn*"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="C" id="clear"/> </td>
+        <td><input type="button" value="0" id="btn0"/> </td>
+        <td><input type="button" value="=" id="result"/> </td>
+        <td><input type="button" value="/" id="btn/"/> </td>
+     </tr>
+   </table> 
+   </div>
+   </div>
+    <script type="module" src="./cal.js"></script>
+
+</body>
+</html>

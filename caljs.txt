@@ -1,0 +1,82 @@
+var screen= document.getElementById('screen');
+var btn7 = document.getElementById('btn7');
+var btn8 = document.getElementById('btn8');
+var btn9 = document.getElementById('btn9');
+var btnPlus = document.getElementById('btn+');
+var btn4 = document.getElementById('btn4');
+var btn5 = document.getElementById('btn5');
+var btn6 = document.getElementById('btn6');
+var btnMinus = document.getElementById('btn-');
+var btn1 = document.getElementById('btn1');
+var btn2 = document.getElementById('btn2');
+var btn3 = document.getElementById('btn3');
+var btnMul = document.getElementById('btn*');
+var clear = document.getElementById('clear');
+var btn0 = document.getElementById('btn0');
+var result = document.getElementById('result');
+var btnDiv = document.getElementById('btn/');
+var table= document.getElementById('table');
+
+function clr(){
+   screen.value="";
+}
+function result(){
+    
+}
+btn7.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn8.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn9.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btnPlus.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn4.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn5.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn6.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btnMinus.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn1.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn2.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btn3.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btnMul.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+clear.addEventListener('click',function(e){
+    screen.value="";
+})
+btn0.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+btnDiv.addEventListener('click',function(e){
+    screen.value+=e.target.value;
+})
+result.addEventListener('click',function(e){
+    var x= screen.value;
+    var y= eval(x);
+    screen.value=y; 
+})
+screen.addEventListener('keyup',function(e){
+  if(e.which === 13){
+    var x= screen.value;
+    var y= eval(x);
+    screen.value=y;
+  }
+})
